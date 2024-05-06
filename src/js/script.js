@@ -36,3 +36,25 @@ function verificarCampos() {
         alert("Por favor, preencha todos os campos.");
     }
 }
+
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var errorMessage = "";
+  
+    if (name.trim() === "") {
+      errorMessage += "Por favor, insira seu nome.\n";
+    }
+    if (phone.trim() === "") {
+      errorMessage += "Por favor, insira seu telefone.\n";
+    }
+    if (email.trim() === "") {
+      errorMessage += "Por favor, insira seu email.";
+    }
+  
+    if (errorMessage !== "") {
+      alert(errorMessage);
+      return false;
+    }
+  }

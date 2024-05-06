@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/estilo.css">
+    <link rel="stylesheet" href="/src/css/contato.css">
     <title>Bikecity</title>
 </head>
 <body>
@@ -27,6 +27,15 @@
             </ul>
         </nav>
     </header>
+
+    <h1 id="formtext">Formulário de Contato</h1>
+
+    <form id="contactForm" onsubmit="return validateForm()">
+        <input type="text" id="name" name="name" placeholder="Nome">
+        <input type="tel" id="phone" name="phone" placeholder="Telefone">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="submit" value="Enviar">
+    </form>
 
     <footer>
         <h5>@2024 - Todos os direitos reservados</h5>
