@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/estilo.css">
+    <link rel="stylesheet" href="/src/css/quiz.css">
     <title>Bikecity</title>
 </head>
 <body>
@@ -27,6 +27,84 @@
             </ul>
         </nav>
     </header>
+
+    <div class="container">
+        <h1>Quiz sobre Bicicletas</h1>
+        <script>
+          var pontuacao = 0;
+      
+          function fazerQuiz() {
+            var resposta;
+      
+            // Pergunta 1
+            resposta = prompt("1. Qual é o nome da parte da bicicleta onde você senta?");
+            if (resposta.toLowerCase() === "selim" || resposta.toLowerCase() === "banco") {
+              pontuacao++;
+            }
+      
+            // Pergunta 2
+            resposta = prompt("2. Como é chamada a peça que você segura enquanto pedala?");
+            if (resposta.toLowerCase() === "guidão") {
+              pontuacao++;
+            }
+      
+            // Pergunta 3
+            resposta = prompt("3. Qual é o nome da peça onde as rodas são conectadas?");
+            if (resposta.toLowerCase() === "quadro") {
+              pontuacao++;
+            }
+      
+            // Pergunta 4
+            resposta = prompt("4. Como é chamado o dispositivo que para a bicicleta?");
+            if (resposta.toLowerCase() === "freio") {
+              pontuacao++;
+            }
+      
+            // Pergunta 5
+            resposta = prompt("5. Qual é o nome da parte onde você coloca os pés?");
+            if (resposta.toLowerCase() === "pedal") {
+              pontuacao++;
+            }
+      
+            // Pergunta 6
+            resposta = prompt("6. O que você gira para mudar as marchas da bicicleta?");
+            if (resposta.toLowerCase() === "manete" || resposta.toLowerCase() === "cambios") {
+              pontuacao++;
+            }
+      
+            // Pergunta 7
+            resposta = prompt("7. Como é chamada a peça que cobre a corrente da bicicleta?");
+            if (resposta.toLowerCase() === "proteção de corrente" || resposta.toLowerCase() === "carter") {
+              pontuacao++;
+            }
+      
+            // Pergunta 8
+            resposta = prompt("8. Qual é o nome da peça que fica na extremidade da roda?");
+            if (resposta.toLowerCase() === "cubo") {
+              pontuacao++;
+            }
+      
+            // Pergunta 9
+            resposta = prompt("9. O que você gira para apertar ou soltar o banco da bicicleta?");
+            if (resposta.toLowerCase() === "abracadeira") {
+              pontuacao++;
+            }
+      
+            // Pergunta 10
+            resposta = prompt("10. Como é chamada a parte da bicicleta que mantém a roda traseira em linha reta?");
+            if (resposta.toLowerCase() === "quadro" || resposta.toLowerCase() === "garfo") {
+              pontuacao++;
+            }
+      
+            // Exibir pontuação
+            var resultado = "Você acertou " + pontuacao + " de 10 perguntas.";
+            alert(resultado);
+            document.write("<h2>" + resultado + "</h2>");
+          }
+      
+          fazerQuiz();
+        </script>
+      </div>
 
     <footer>
         <h5>@2024 - Todos os direitos reservados</h5>
