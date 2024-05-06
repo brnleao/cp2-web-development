@@ -5,7 +5,7 @@
       margin: 0;
       box-sizing: border-box;
   }
-  
+
   body{
       background-color: #080710;
   }
@@ -92,6 +92,7 @@
       margin-top: 8px;
       font-size: 14px;
       font-weight: 300;
+      margin-top: 30px;
   }
 
   ::placeholder{
