@@ -3,6 +3,12 @@ let imagens = ['/src/assets/img/bike1.jpg', '/src/assets/img/bike2.jpg', '/src/a
 let index = 0;
 let time = 4000;
 
+if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+    window.onload = function() {
+        alert("Seja bem-vindo!");
+    };
+}
+
 function mudarCor(cor){
     var body = document.body;
 
@@ -19,3 +25,14 @@ function slideShow(){
     setTimeout('slideShow()', time);
 }
 slideShow();
+
+function verificarCampos() {
+    var campo1 = document.getElementById("username").value;
+    var campo2 = document.getElementById("password").value;
+
+    if (campo1 !== "" && campo2 !== "") {
+        window.location.href = "./quiz.html";
+    } else {
+        alert("Por favor, preencha todos os campos.");
+    }
+}
